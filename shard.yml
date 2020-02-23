@@ -1,4 +1,7 @@
 name: ll_calculator
+description: |
+  A text-based calculator that can evaluate prefix, infix, and postfix expressions
+
 version: 0.1.0
 
 authors:
@@ -8,6 +11,16 @@ targets:
   ll_calculator:
     main: src/ll_calculator.cr
 
+dependencies:
+  fancyline:
+    github: Papierkorb/fancyline
+    
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 0.11.0
+
+
 crystal: 0.32.1
 
-license: MIT
+license: MIT | APACHE2
